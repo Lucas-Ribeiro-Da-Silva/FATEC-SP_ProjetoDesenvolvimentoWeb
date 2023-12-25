@@ -1,0 +1,16 @@
+/*
+os dispositivos ipad mini, ipad Air e suface pro 7 tem uma peculiaridade
+sua grade extensao de altura em comparação a largura afeta a verticalidade
+por isso nesses dispositivos estou adicionando uma centralização vertical
+exclusivamente na página home.
+*/
+
+@media (min-height: 1000px) and (max-width:1366px){
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: calc(100vh - 15vh - 15vh);
+}
+}
